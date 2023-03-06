@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/CSS/project.css" />
+    <link rel="stylesheet" href="assets/CSS/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  </head>
+  <input>
+    <!-- Navbar -->
+    <nav>
+      <img src="assets/images/logo.png">
+      <ul>
+        <li>
+          <a href="index.html" id="home">Home</a>
+        </li>
+        <li>
+          <a href="myProject.html" id="project" class="active">My project</a>
+        </li>
+        <li>
+          <a href="contact-me.html" id="hidden">Contact Me</a>
+        </li>
+        <li>
+          <a href="testimonials.html" id="testi">Testimonial</a>
+        </li>
+      </ul>
+      <div class="container-contact">
+        <a href="contact-me.html">Contact Me</a>
+      </div>
+      <!-- toggle -->
+      <div class="toggle">
+        <input type="checkbox" />
+        <span></span>
+      </div>
+
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- PROJECT -->
+    <div id="form-container">
+        <h1>ADD MY PROJECT</h1>
+        <p id="alert"></p>
+        <form onsubmit="addProject(event)">
+          <div>
+            <label for="project-name">Project Name</label>
+            <input type="text" id="project-name" placeholder="Enter your project here"/>
+          </div>
+          <div id="project-date-container">
+            <div>
+              <label for="start-date">Start Date</label>
+              <input type="date" id="start-date"/>
+            </div>
+            <div>
+              <label for="end-date">End Date</label>
+              <input type="date" id="end-date"/>
+            </div>
+          </div>
+          <div>
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="enter your description here, in the form of an explanation of the website you have created."></textarea>
+          </div>
+          <div id="technologies-container">
+            <label>Technologies</label>
+            <div>
+              <div>
+                <div>
+                  <input id="technology-1" value="fa-node" type="checkbox">
+                  <label>Node JS</label>
+                </div>
+                <div>
+                  <input id="technology-2" value="fa-react" type="checkbox">
+                  <label>React</label>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <input id="technology-3" value="fa-js" type="checkbox">
+                  <label>Javascript</label>
+                </div>
+                <div>
+                  <input id="technology-4" value="fa-python" type="checkbox">
+                  <label>Python</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="upload-image-container">
+            <label>Upload Image</label>
+            <label for="upload-image">
+              <span>choose</span>
+              <input type="file" id="upload-image"/>
+              <i class="fa-solid fa-paperclip fa-lg"></i>
+            </label>
+          </div>
+          <div id="submit-button-container">
+            <button id="submit-button">submit</button>
+          </div>
+        </form>
+      </div>
+      <!-- END PROJECT -->
+
+      <!-- Project Details -->
+      
+
+      <div id="project-list">
+        <h1>MY PROJECT</h1>
+        <div>
+          <div id="projects-container">
+            <div id="project-container">
+              <img src="assets/images/MobileApp1.jpg"/>
+              <a href="projects/project-1.html" target="_blank"><h3>Mobile App - 2019</h3></a>
+              <div>durasi: 1 bulan</div>
+              <p>
+                App that used for dumbways student, it was deployed and can downloaded on pl aystore.<br/>Happy download
+              </p>
+              <div>
+                <i class="fa-brands fa-node fa-3x"></i>
+                <i class="fa-brands fa-react fa-3x"></i>
+                <i class="fa-brands fa-js fa-3x"></i>
+              </div>
+              <div>
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+            <div id="project-container">
+              <img src="assets/images/WebApp1.jpg"/>
+              <a href="projects/project-2.html" target="_blank"><h3>Web App - 2021</h3></a>
+              <div>durasi: 1 bulan</div>
+              <p>
+                App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+              </p>
+              <div>
+                <i class="fa-brands fa-node fa-3x"></i>
+                <i class="fa-brands fa-react fa-3x"></i>
+                <i class="fa-brands fa-python fa-3x"></i>
+              </div>
+              <div>
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+            <div id="project-container">
+              <img src="assets/images/MobileApp2.jpg"/>
+              <a href="projects/project-3.html" target="_blank"><h3>Mobile App - 2023</h3></a>
+              <div>durasi: 1 bulan</div>
+              <p>
+                App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+              </p>
+              <div>
+                <i class="fa-brands fa-node fa-3x"></i>
+                <i class="fa-brands fa-react fa-3x"></i>
+                <i class="fa-brands fa-js fa-3x"></i>
+              </div>
+              <div>
+                <button>edit</button>
+                <button>delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End Project Details -->
+
+      <!-- Javascript -->
+      <script src="assets/js/myProject.js"></script>
+      <script src="assets/js/hamburger.js"></script>
+      <!-- END Javascript -->
+
+      
+  </body>
+</html>

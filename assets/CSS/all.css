@@ -1,0 +1,137 @@
+div.cards {
+  background-color: white; 
+  width: 80%; 
+  margin: 2rem auto; 
+  display: flex;
+  margin-top: 6rem; 
+  border-radius: 8px; 
+  box-shadow: 5px 10px 18px #888888; 
+  padding: 5rem;
+}
+
+div.page1 {
+  padding: 12px; 
+  text-align: justify;
+  width: 100%;
+}
+
+div.page1 h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+div.page1 p {
+  margin-top: 1rem;
+}
+
+div.page1 div.pack1 {
+  margin: 3rem 0;
+}
+
+div.pack1 a.contact {
+  text-decoration: none; 
+  color: white; 
+  background-color: #03001C; 
+  padding: 4px 18px; 
+  border-radius: 24px; 
+  font-weight: 600; 
+  font-size: 16px; 
+  margin-right: 12px;
+}
+
+div.pack1 a.download {
+  text-decoration: none; 
+  color: black; 
+  font-size: 16px;
+}
+
+div.pack1 a.download i {
+  margin-left: 4px;
+}
+
+div.page1 div.pack2 {
+  width: 100%;  
+  display: flex; 
+  font-size: 2.5rem;
+}
+
+div.page1 div.pack2 a {
+  margin-right: 2rem;
+}
+
+div.page1 div.pack2 a i {
+  color: white; 
+  background-color:black; 
+  padding: 6px; 
+  border-radius: 25%;
+}
+
+div.page2 {
+  width: 50%;
+  padding: 12px;
+
+}
+
+div.page2 div {
+  border-radius: 8px; 
+  width: 80%; 
+  margin: 0 auto;
+  box-shadow: 0 5px 5px rgba(29, 29, 29, 0.25);
+  margin-left: 4rem;
+}
+
+div.page2 img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #222222; 
+}
+
+div.page2 div.pack1 {
+  text-align: center;
+  box-shadow: none; 
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+
+
+div.page2 p {
+  margin-top: -3px;
+}
+
+@media screen and (max-width: 900px) {
+  div.cards {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  div.page1 {
+      width: 80%;
+      padding: 4rem 2rem;
+      margin: 0 auto;
+  }
+
+  div.page1 div.pack2 a {
+  margin: 0 auto;
+  letter-spacing: 0;
+  text-align: center;
+  }
+
+  div.page2{
+      margin: 0 auto;
+      padding: 0;
+      width: 80%;
+      margin-bottom: 5rem;
+  }
+  div.page2 div {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  div.page1 h1 {
+      font-size: 3rem;
+      text-align: center;
+  }
+}

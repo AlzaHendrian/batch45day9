@@ -1,0 +1,18 @@
+                            ASYNCHRONOUS
+
+asyn atau asynchronous : memungkinkan program unuk dieksekusi sesegera di mana kode sinkron akan memblokir eksekusi lebih lanjut dari kode yang tersisa sampai menyelesaikan yang sekarang.
+
+perbedaan asynchronous dan synchronous : kalo synchronous si mesin caranya dari kode atas kebawah. sedangkan asynchronous mesin membaca kode duluan.
+
+                            PROMISE
+
+promise : sebagai objek yg menyimpan hasil dari sebuah operasi asyncronous baik itu hasil yg diinginkan (resolved) atau alasan kenapa operasi itu gagal(failed riset/rejected)
+
+3 status promise : pending, fullfil/resolved, failure/rejected
+
+then untuk menangkap data atau response/parameter yg diterima, berhasil ambil data atau janji terpenuhi, sedangkan
+cacth untuk menangkap data gagal
+
+                            ASYNAWAIT
+ASYNAWAIT merupakan fitur yg ada di ES2017 fitur ini mempermudah kita dalam menangani proses asyncrhonous, merupakan syntak khusus yg digunakan untuk menangani promise agar penulisan code jadi lebih efisien dan rapih. simpelnya mempermudah pemanggilan promise.
+

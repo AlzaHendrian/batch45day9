@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/CSS/contact.css">
+    <link rel="stylesheet" href="assets/CSS/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <img src="assets/images/logo.png">
+    <ul>
+      <li>
+        <a href="index.html" id="home">Home</a>
+      </li>
+      <li>
+        <a href="myProject.html" id="project">My project</a>
+      </li>
+      <li>
+        <a href="contact-me.html" id="hidden" class="active">Contact Me</a>
+      </li>
+      <li>
+        <a href="testimonials.html" id="testi">Testimonial</a>
+      </li>
+    </ul>
+    <div class="container-contact">
+      <a href="contact-me.html" class="active">Contact Me</a>
+    </div>
+    <!-- toggle -->
+    <div class="toggle">
+      <input type="checkbox" />
+      <span></span>
+    </div>
+
+  </nav>
+  <!-- End Navbar -->
+
+    <form>
+        <h1>GET IN TOUCH</h1>
+        <p id="alert"></p>
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter your email">
+        </div>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" placeholder="Enter your number">
+        </div>
+
+        <div>
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="none" selected disabled hidden>
+                Select an Option
+              </option>
+                <option>Collaboration</option>
+                <option>Discussion</option>
+                <option>Hiring</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">your message</label>
+            <Textarea id="message" placeholder="Enter your message"></Textarea>
+        </div>
+
+        <div class="submit">
+            <button type="button" onclick="onSubmit()">submit</button>
+        </div>
+    </form>
+
+    <!-- Javascript -->
+    <script src="assets/js/contactMe.js"></script>
+    <script src="assets/js/hamburger.js"></script>
+</body>
+
+</html>
